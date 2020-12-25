@@ -1,0 +1,20 @@
+GET http://localhost:8000/
+
+###
+
+POST  http://localhost:8000/sign-up
+Content-Type: application/json
+
+ {
+        "username" : "Ayush jain",
+        "password" : "ayushJain@18"
+ }
+
+###
+ POST  http://localhost:8000/sign-in
+Content-Type: application/json
+
+ {
+        "username" : "Ayush jain",
+        "password" : "ayushJain@18"
+ }
