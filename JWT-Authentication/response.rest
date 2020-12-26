@@ -1,0 +1,37 @@
+GET http://localhost:9000/
+
+###
+POST http://localhost:9000/api/authenticate/signup
+Content-Type: application/json
+
+{
+ "name" : "Ayush jain" ,
+ "password" : "Ayush@12345",
+ "email" : "Ayush@12345.com"
+}
+
+###
+POST http://localhost:9000/api/authenticate/login
+Content-Type: application/json
+
+
+{
+ "password" : "Ayush@12345",
+ "email" : "Ayush@12345.com"
+}
+
+// {"_id":{"$oid":"5fe7082c66e5330e741159c1"},"name":"Ayush jain","email":"Ayush@12345.com","password":"$2b$10$OvpC6cKAWZANNeunVA8WJ.OHzFMM31E24i7ZDvhH0hR32Q9cupuim","date":{"$date":{"$numberLong":"1608976428146"}},"createdAt":{"$date":{"$numberLong":"1608976428149"}},"updatedAt":{"$date":{"$numberLong":"1608976428149"}},"__v":{"$numberInt":"0"}}
+
+###
+
+GET http://localhost:9000/api/userpost
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTcwODJjNjZlNTMzMGU3NDExNTljMSIsImlhdCI6MTYwODk5NjgxMH0.4LE896eT23Js0SPT8ScvxivOUyL3Q2zxBFY_FqG7JEM
+
+
+{
+ "city"  : "Baghpat",
+"country": "India",
+"state"  : "UP"
+}
+ 
