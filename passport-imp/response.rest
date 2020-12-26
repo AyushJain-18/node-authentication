@@ -1,0 +1,5 @@
+GET http://localhost:2000
+###
+
+
+GET http://localhost:2000/auth/google
